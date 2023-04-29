@@ -1,0 +1,297 @@
+/*---------------------------first-section---------------------------------------------------------*/
+body{
+     background: linear-gradient(to left, #abbaab, #ffffff);
+  /*background: linear-gradient(to right, #00bf8f, #001510);*/
+ /*background:-webkit-linear-gradient(0deg, hsla(153, 43%, 92%, 1) 0%, hsla(24, 88%, 65%, 1) 100%, hsla(216, 56%, 16%, 1) 100%);*/
+    width: 100% !important;
+}
+.jumbotron{
+    height: 700px;
+    padding: 3%;
+
+
+}
+.display-4{
+     overflow: hidden; /* Ensures the content is not revealed until the animation */
+  /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+
+     animation:
+    typing 3.5s steps(45, end),
+    blink-caret .75s step-end infinite;
+}
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+.lead{
+    animation: opacity 7s;
+
+
+
+    }
+@keyframes opacity {
+from {opacity: 0}
+    to {opacity: 100%}
+}
+.profilepic{
+    float: left;
+    margin-top: 5%;
+    width: 50%;
+    margin-left: 10%;
+}
+.container{
+    float: right;
+    width: 50%;
+    margin-right: 5%;
+    margin-top:-18%;
+    background-color: #FFFFFF12;
+    color: white;
+    padding: 2%;
+    border-left: 2px solid white;
+}
+.profilepic img{
+    width: 50%
+
+}
+/*------------------------------------------------second-section---------------------------------------------*/
+.education{
+    width: 80%;
+
+    border-radius: 25px;
+color: #06191d;
+    padding: 3%;
+    margin: 3% auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+}
+.edu-heading{
+color: #06191d;
+    font-weight: bolder;
+    text-align: center;
+}
+.degree{
+    float: right;
+    width: 60%;
+    margin-top: -15%;
+    margin-right: -22%;
+}
+.degree img{
+    width: 20%;
+}
+.education ul{
+    list-style-type: circle;
+}
+.education ul li h5{
+    font-weight: bold;
+}
+/*----------------------------------------------third-section-----------------------------------------------------------------*/
+.skills{
+        width: 80%;
+    text-align: center;
+    border-radius: 25px;
+  color: #06191d;
+    padding: 3%;
+    margin: 3% auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+svg{
+    width:3em;
+}
+/*--------------------------------------------fourth-section------------------------------------------------*/
+.footer{
+    background: white;
+    width:fit-content;
+    text-align: center;
+    padding: 0.9%;
+    margin-left:5%;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border-radius: 15px;
+   flex-direction: column;
+    bottom: 10%;
+    display: flex;
+position:fixed;
+    z-index: 100;
+}
+.tooltiptext{
+    visibility: hidden;
+  width: 120px;
+    left: 90%;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 3px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+.link:hover .tooltiptext{
+    visibility: visible;
+}
+.footer .link{
+
+    cursor: pointer;
+
+}
+
+.footer .link .fa-2x{
+    margin-bottom:8%;
+    color: #06191d !important;
+}
+/*---------------------------------fifth section---------------------------------------------------*/
+#carouselMaterialStyle{
+    width: 80% !important;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3%;
+}
+.btn{
+    background:-webkit-linear-gradient(0deg, hsla(153, 43%, 92%, 1) 0%, hsla(24, 88%, 65%, 1) 100%, hsla(216, 56%, 16%, 1) 100%);
+  color: black;
+    font-weight: bolder;
+
+}
+.btn:hover{
+    color: black;
+    text-decoration: line-through;
+}
+.h{
+    visibility: hidden;
+}
+/*------------------------------------sixth-section------------------------------------------------*/
+.extras{
+    width: 80%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-top: 3%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: row;
+    padding: 3%;
+    margin-bottom: 3%;
+    border-radius: 25px;
+
+}
+.interests{
+    width: 40%;
+
+}
+.languages{
+    width: 40%;
+
+}
+hr{
+    transform: rotate(270deg);
+    width: 20%;
+    background: transparent;
+   border-top:5px solid #06191d;
+    font-weight: bolder;
+    color: #06191d;
+}
+/*-------------------------------responsiveness-----------------------------------------------------*/
+@media only screen and (min-width: 150px) and (max-width: 768px){
+    .jumbotron{
+        background-position:bottom right;
+        height: 680px;
+        margin-bottom: 10%;
+    }
+    .profilepic{
+        float: none;
+        width: 95%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:15%;
+        text-align: center;
+    }
+    .profilepic img{
+        width: 70%;
+    }
+    .container{
+        float: none;
+        text-align: center;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 18%;
+    }
+    .education{
+        width: 98%;
+        margin-top:8%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 4%;
+    }
+    .degree{
+        display: none;
+    }
+    .skills{
+
+        width: 98%;
+        margin-top: 6%;
+    }
+    .footer{
+        position: relative;
+        flex-direction: row;
+        top: 4%;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        align-items: center;
+        padding: 4%;
+
+    }
+    .footer .link{
+        margin-right:13%;
+    }
+    .tooltiptext{
+        left: auto;
+
+        bottom: 100%;
+    }
+    #carouselMaterialStyle{
+        width: 100% !important;
+        margin-top:4%;
+    }
+    .h{
+        visibility: visible;
+        color: #06191d;
+        margin-top: 6%;
+        font-weight: bold;
+    }
+    .carousel-item{
+        cursor:pointer;
+    }
+    .extras{
+        width: 98%;
+        margin-top: 6%;
+        margin-bottom: 4%;
+    }
+    hr{
+        ransform: rotate(630deg);
+    width: 20%;
+    position: absolute;
+    /* background: black; */
+    background: transparent;
+    font-weight: bolder;
+    border-top: 8px solid black;
+    color: #06191d;
+    margin-left: 45%;
+    /* margin-right: 30%; */
+    margin-top: 8%;
+    height: 108px;
+    }
+    .languages{
+        margin-left:18%;
+    }
+}

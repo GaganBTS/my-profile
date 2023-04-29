@@ -1,0 +1,193 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+    Gagandeep - Python Django Developer
+{% endblock %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'styles/home.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="jumbotron jumbotron-fluid">
+    <div class="profilepic">
+        <img src="{% static 'images/main.jpg' %}" alt="responsive-profile-pic">
+    </div>
+        <div class="container">
+            <h1 class="display-4" style="color: #0A4D68;">I am <span style="color: #212A3E;">Gagandeep</span></h1>
+            <p class="lead" style="color: #0A4D68; font-weight: bold;">Python and Django Developer</p>
+        </div>
+    </div>
+    <section class="education">
+    <h2 class="edu-heading">My Education</h2>
+        <br>
+    <ul>
+        <li><h5>B.Tech CSE (2019-23)</h5><span>DAV University</span>  <span>(8.26 GPA)</span></li>
+        <br>
+        <li><h5>Senior Secondary (XII) (2018-19)</h5><span>Shiv Jyoti Public School, Jalandhar</span>  <span>(76%)</span></li>
+
+    </ul>
+<div class="degree">
+    <img src="{% static 'images/degree.png' %}" alt="graduation-cap">
+</div>
+    </section>
+    <section class="skills" id="myskills">
+    <h2 class="edu-heading">My Skills</h2>
+        <br>
+    <div class="container2">
+  <div class="row">
+    <div class="col-4 col-md-3">
+      <i class="fa-brands fa-3x fa-python"></i>
+        <p>Python</p>
+    </div>
+    <div class=" col-4 col-md-3">
+<svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24" id="django"><path fill="#0D2E1E" d="M21.25,6.06L21.25,6.06l-3.897-0.001v7.747c0,3.414-0.177,4.714-0.733,5.835c-0.531,1.096-1.366,1.811-3.088,2.626L17.15,24c1.721-0.866,2.557-1.656,3.188-2.905c0.684-1.299,0.911-2.803,0.911-5.937V6.06L21.25,6.06z"></path><path fill="#0D2E1E" d="M15.049,18.165V0h-3.896v5.984C10.571,5.831,10.089,5.78,9.457,5.78c-4.076,0-6.707,2.599-6.707,6.6c0,4.154,2.479,6.32,7.238,6.32C11.582,18.701,13.05,18.548,15.049,18.165L15.049,18.165z M6.724,12.304c0-2.141,1.138-3.364,3.113-3.364H9.832l0.082-0.001c0.443,0,0.868,0.075,1.238,0.205v6.294c-0.557,0.077-0.911,0.102-1.341,0.102C7.811,15.539,6.724,14.394,6.724,12.304L6.724,12.304z"></path><path fill="#0B281A" d="M21.25 12h-3.897v1.807c0 3.414-.177 4.714-.733 5.835-.531 1.096-1.366 1.811-3.088 2.626L17.15 24c1.721-.866 2.557-1.656 3.188-2.905.684-1.299.911-2.803.911-5.937V12L21.25 12zM15.049 12h-3.896v3.438c-.557.077-.911.102-1.341.102-2 0-3.088-1.146-3.088-3.235 0-.104.003-.205.008-.304H2.758c-.005.125-.008.252-.008.38 0 4.154 2.479 6.32 7.238 6.32 1.594 0 3.062-.153 5.061-.535V12L15.049 12z"></path><polygon fill="#0D2E1E" points="21.25 .021 17.353 .021 17.353 4.048 21.25 4.048 21.25 .021"></polygon><polygon fill="#0B281A" points="19.302 .021 17.353 .021 17.353 4.048 19.302 4.048 19.302 .021"></polygon></svg>
+    <p>Django</p>
+    </div>
+    <div class=" col-4 col-md-3">
+        <i class="fa-brands fa-3x fa-js"></i>
+        <p>JavaScript</p>
+    </div>
+      <div class=" col-4 col-md-3">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 24" id="jquery"><path d="m1.582 5.638c-2.206 3.17-1.931 7.294-.246 10.663.04.08.08.16.123.24.026.05.051.102.08.151.015.03.033.059.049.087.029.054.058.105.088.16q.08.138.16.275c.03.05.06.101.092.151q.091.147.186.292c.026.042.052.08.08.122.088.131.178.262.27.39l.008.01c.014.021.031.041.046.062.08.11.16.22.246.328l.093.118q.112.141.228.28l.087.104c.103.122.209.24.32.362l.006.006.012.013c.106.115.214.228.32.34l.103.104c.085.085.17.169.258.252.035.034.07.068.106.1.116.11.234.217.353.32.002.002.003.004.006.005.02.018.042.035.062.052q.16.137.32.271l.133.106q.132.106.267.209l.143.109c.099.073.199.145.3.214.037.026.072.052.11.08l.03.022c.096.066.194.13.291.193.042.028.08.057.126.08.15.094.302.189.456.279l.126.071c.113.066.226.13.342.192.062.034.126.066.189.098.08.043.16.086.245.127l.057.027.1.049q.192.092.388.18l.08.037q.224.098.453.189l.11.043c.141.054.284.108.427.16l.054.018c.16.055.32.106.48.156l.115.034c.128.046.292.094.461.132l.031.006c10.667 1.945 13.766-6.41 13.766-6.41-2.602 3.39-7.222 4.285-11.6 3.289-.166-.038-.326-.089-.489-.137l-.122-.037q-.24-.073-.47-.153l-.065-.023c-.139-.049-.278-.101-.414-.154l-.116-.046c-.15-.059-.3-.122-.448-.186l-.09-.04c-.127-.058-.253-.115-.378-.175l-.109-.053c-.098-.048-.195-.098-.292-.149-.065-.034-.131-.066-.195-.102-.118-.063-.234-.13-.35-.197l-.118-.066c-.154-.09-.306-.185-.456-.279-.042-.026-.08-.054-.123-.08-.109-.07-.218-.142-.325-.216-.035-.023-.07-.05-.105-.074q-.155-.109-.307-.222c-.046-.034-.091-.069-.136-.103-.093-.071-.186-.142-.277-.217l-.123-.099c-.116-.096-.231-.191-.345-.29l-.038-.032c-.122-.108-.24-.218-.362-.33l-.102-.098q-.133-.126-.26-.255l-.102-.102q-.16-.167-.32-.338l-.016-.017c-.11-.121-.218-.244-.324-.369l-.083-.102c-.08-.095-.16-.191-.233-.288-.029-.034-.058-.07-.086-.106-.092-.119-.182-.24-.27-.358-2.43-3.314-3.303-7.886-1.36-11.64z"></path><path d="m8.429 2.966c-.754 1.166-1.202 2.592-1.202 4.121 0 1.347.347 2.613.958 3.714l-.02-.039c.235.457.469.843.727 1.21l-.022-.032c.244.387.515.723.82 1.024l.001.001c.115.126.235.25.358.371.031.032.062.062.094.094.119.115.24.229.366.339.005.004.01.01.015.013.138.122.282.24.427.353l.097.076c.146.112.294.222.446.326l.013.01c.067.046.136.09.204.134.033.022.064.044.097.064.109.07.219.138.331.203l.046.027c.097.056.194.11.293.16.034.019.069.036.104.054.068.035.136.071.205.106l.03.014c.141.07.282.136.427.199.031.014.062.026.094.039.115.049.233.097.35.142l.15.055c.106.039.214.076.32.112l.146.046c.126.048.281.094.441.13l.024.004c8.236 1.365 10.138-4.977 10.138-4.977-1.714 2.468-5.034 3.646-8.575 2.727-.16-.042-.312-.086-.466-.135-.047-.014-.094-.03-.14-.046-.11-.035-.218-.074-.326-.113l-.147-.054c-.118-.046-.235-.093-.351-.142-.032-.014-.064-.026-.094-.04-.146-.063-.289-.13-.43-.199-.073-.036-.144-.074-.215-.11l-.124-.064q-.138-.075-.273-.154c-.021-.012-.043-.024-.065-.037q-.167-.098-.33-.202c-.034-.022-.066-.045-.099-.066-.072-.046-.143-.094-.214-.142-.152-.105-.299-.214-.445-.326l-.1-.08c-1.549-1.211-2.718-2.843-3.34-4.723l-.02-.07c-.236-.694-.373-1.494-.373-2.325 0-1.338.353-2.594.972-3.679l-.019.037z"></path><path d="m14.188.97c-.504.747-.804 1.668-.804 2.659 0 .715.156 1.393.436 2.002l-.012-.03c.73 1.627 2.059 2.876 3.699 3.484l.045.015c.068.026.135.048.205.071l.09.028c.078.029.176.058.276.081l.017.003c4.547.88 5.781-2.334 6.11-2.806-1.081 1.556-2.896 1.929-5.124 1.389-.176-.043-.37-.106-.539-.167-.262-.093-.474-.183-.679-.283l.039.017c-.428-.209-.795-.436-1.136-.697l.016.012c-1.994-1.513-3.232-4.4-1.931-6.749z"></path></svg>
+          <p>jQuery</p>
+    </div>
+       <div class=" col-4 col-md-3">
+           <i class="fa-brands  fa-3x fa-css3-alt"></i>
+          <p>CSS</p>
+    </div>
+       <div class=" col-4 col-md-3">
+           <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24" id="html5"><path d="M3.1825,2.00012,4.78735,20.00079l7.20191,1.99933,7.22168-2.00207L20.8175,2.00012ZM17.32507,7.88739H8.87683l.20178,2.26074h8.04554l-.60584,6.778L12,18.17834v.00043l-.01013.00275L7.46753,16.92615,7.1582,13.45972H9.37439l.1571,1.76074,2.45874.66388.00208-.00049v-.00018l2.46228-.66461.25635-2.86323H7.05957L6.46411,5.67969h11.0586Z"></path></svg>
+            <p>HTML</p>
+    </div>
+           <div class=" col-4 col-md-3">
+       <i class="fa-solid fa-code fa-3x"></i>
+          <p>AJAX</p>
+    </div>
+           <div class=" col-4 col-md-3">
+<i class="fa-solid fa-laptop-code fa-3x"></i>
+          <p>Responsive web design</p>
+    </div>
+           <div class=" col-4 col-md-3">
+           <i class="fa-solid fa-database fa-3x"></i>
+          <p>Database/ Django ORM</p>
+    </div>
+      <div class="col-4 col-md-3">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" id="api"><path d="M26.2 16H25v3.1h1.3c.8 0 1.5-.7 1.5-1.5 0-.9-.7-1.6-1.6-1.6zm0 0H25v3.1h1.3c.8 0 1.5-.7 1.5-1.5 0-.9-.7-1.6-1.6-1.6zM5.5 8.5v23h37v-23h-37zM21 26.1h-2v-3.7h-2.8v3.7h-2v-8.7c0-1.9 1.5-3.4 3.4-3.4s3.4 1.5 3.4 3.4v8.7zm5.2-5H25v5h-2V14h3.3c1.9 0 3.5 1.6 3.5 3.6 0 1.9-1.6 3.5-3.6 3.5zm7.6 5h-2v-12h2v12zM26.2 16H25v3.1h1.3c.8 0 1.5-.7 1.5-1.5 0-.9-.7-1.6-1.6-1.6zm-8.6 0c-.8 0-1.4.6-1.4 1.4v3H19v-3c0-.8-.7-1.4-1.4-1.4zM45.7 39.5H2.3L0 33.6h48z"></path></svg>
+          <p>REST API</p>
+      </div>
+      <div class="col-4 col-md-3">
+          <i class="fa-brands fa-3x fa-git-alt"></i>
+          <p>Git and GitHub</p>
+      </div>
+      <div class="col-4 col-md-3">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="selenium"><g data-name="Layer 2"><g data-name="34 Selenium,periodic table,chemistry,metal,education,science,element"><path d="M337.89 217.61l-10-.09 0-5c.07-7.87.16-19.14.24-31.58h-57a5 5 0 01-4.38-7.42c4.24-7.69 41.67-75.43 48.57-83.89 5.9-7.24 11.78-6.4 14-5.7 4.86 1.5 8.34 6.5 8.85 12.72.38 4.5.22 42.87 0 74.29h15.84v10H338.17c-.11 17-.23 30.15-.24 31.67zm-58.27-46.67h48.62c.21-32.84.35-69.5 0-73.46-.21-2.46-1.32-3.84-1.85-4-.33-.11-1.6.36-3.32 2.47C318.68 101.36 296.06 141.3 279.62 170.94zM194 155.52h-5v-10h5a26 26 0 10-25.54-31.08l-1 4.91-9.81-1.93 1-4.91a36 36 0 1135.35 43z"></path><path d="M194 217.56a36 36 0 01-36-36v-5h10v5a26 26 0 1026-26h-5v-10h5a36 36 0 110 72zM195.25 428.54c-18 0-35.58-7.5-46.95-20L145 404.79l7.41-6.71 3.35 3.7c9.51 10.49 24.29 16.76 39.54 16.76 18.17 0 30.06-11.74 32-22.78 2.11-11.82-6.48-22.52-23-28.6-18.92-7-36.24-14.69-36.41-14.77a4.64 4.64 0 01-.69-.38 29 29 0 01-12.93-28.74c1.79-12.49 11.08-22.7 24.26-26.67 28.52-8.6 52.19 10.93 53.18 11.77l3.83 3.21-6.43 7.66L225.29 316c-.31-.25-20.67-16.85-43.88-9.86-9.55 2.88-16 9.8-17.24 18.52a19.11 19.11 0 008.17 18.73c2.61 1.16 18.35 8.06 35.42 14.35 21.42 7.9 32.4 22.76 29.37 39.75C234 415.2 216 428.54 195.25 428.54zM360 386.58h0l-77.54-.15a5 5 0 01-5-4.82l-.21-5.82v-.19a43.88 43.88 0 1187.75-.06v6a5 5 0 01-5 5zm-72.72-10.14l67.72.13v-1a33.88 33.88 0 00-67.75 0z"></path><path d="M325.83,428.54a48.49,48.49,0,0,1-48.44-48.44v-5h10v5a38.48,38.48,0,0,0,38.44,38.44c8.13,0,15-2.48,20.51-7.36a29.73,29.73,0,0,0,3-3.12l3.21-3.83,7.67,6.43L357,414.49a39.66,39.66,0,0,1-4,4.16C345.73,425.12,336.33,428.54,325.83,428.54Z"></path><path d="M512,512H0V0H512ZM10,502H502V10H10Z"></path><path d="M5 266.12v-10a36 36 0 0036-36V41H220.14a36 36 0 0036-36h10a46 46 0 01-46 46H51V220.14A46 46 0 015 266.12zM255.88 507h-10a46 46 0 0146-46H461V291.86a46 46 0 0146-46v10a36 36 0 00-36 36V471H291.86A36 36 0 00255.88 507z"></path></g></g></svg>
+          <p>Web Scraping</p>
+      </div>
+  </div>
+</div>
+
+    </section>
+{#    ------------------------------------projects------------------------------------------#}
+    <!-- Carousel wrapper -->
+
+<div id="carouselMaterialStyle" class="carousel slide carousel-fade" data-mdb-ride="carousel">
+  <!-- Indicators -->
+  <div class="carousel-indicators">
+    <button type="button" data-mdb-target="#carouselMaterialStyle" data-mdb-slide-to="0" class="active" aria-current="true"
+      aria-label="Slide 1"></button>
+    <button type="button" data-mdb-target="#carouselMaterialStyle" data-mdb-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-mdb-target="#carouselMaterialStyle" data-mdb-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+
+  <!-- Inner -->
+  <div class="carousel-inner rounded-5 shadow-4-strong">
+
+    <!-- Single item -->
+    <div onclick="window.open('https://cybervend.pythonanywhere.com','_blank')"  class="carousel-item active">
+      <img src="{% static 'images/gshop.png' %}" class="d-block w-100"
+        alt="website-screenshot" />
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Project Name -  GShop</h5>
+        <p>A full fledged ecommerce website.</p>
+          <button onclick="window.open('https://cybervend.pythonanywhere.com','_blank')" class="btn">View Project</button>
+      </div>
+    </div>
+
+    <!-- Single item -->
+    <div onclick="window.open('https://passwordkeeper.pythonanywhere.com','_blank')" class="carousel-item">
+      <img src="{% static 'images/secrets.png' %}" class="d-block w-100"
+        alt="Canyon at Nigh" />
+      <div class="carousel-caption d-none d-md-block">
+
+        <h5>Project Name - Secrets</h5>
+        <p>A responsive password manager  web application.</p>
+          <button onclick="window.open('https://passwordkeeper.pythonanywhere.com','_blank')" class="btn">View Project</button>
+
+      </div>
+    </div>
+
+    <!-- Single item -->
+    <div onclick="window.open('https://smarttraineeblogs.pythonanywhere.com','_blank')" class="carousel-item">
+      <img src="{% static 'images/smarttraineeblogs.png' %}" class="d-block w-100"
+        alt="Cliff Above a Stormy Sea" />
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Project - SmarTTraineeblogs</h5>
+        <p>A responsive Blogging web application.</p>
+           <button onclick="window.open('https://smarttraineeblogs.pythonanywhere.com','_blank')" class="btn">View Project</button>
+
+      </div>
+    </div>
+  </div>
+  <!-- Inner -->
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button" data-mdb-target="#carouselMaterialStyle" data-mdb-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-mdb-target="#carouselMaterialStyle" data-mdb-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!-- Carousel wrapper -->
+{#-----------------------endprojects------------------------------#}
+    <div class="extras">
+    <section class="interests">
+       <h2 style="font-weight: bolder;">Interests</h2>
+        <p>Programming</p>
+        <p>Playing outdoor games</p>
+        <p>Reading Literature</p>
+    </section>
+        <hr>
+    <section class="languages">
+    <h2 style="font-weight: bolder;">Languages</h2>
+        <p>English </p>
+        <p>Hindi </p>
+        <p>Punjabi </p>
+
+    </section>
+
+    </div>
+
+      <section class="footer">
+
+          <a class="link" target="_blank" href="https://drive.google.com/file/d/10HYYfroBPlUfWRbtyLL0C3xLxOAnWtKo/view?usp=share_link"><i class="fa-solid fa-file fa-2x"></i>
+          <span class="tooltiptext">
+              Resume
+          </span>
+          </a>
+          <a class="link"  target="_blank" href="https://www.linkedin.com/in/gagandeep-singh-23606a210/"><i class="fa-brands fa-linkedin fa-2x"></i>
+           <span class="tooltiptext">
+              LinkedIn
+          </span></a>
+          <a class="link"  target="_blank"  href="https://github.com/GaganBTS"><i class="fa-brands fa-github fa-2x"></i>
+           <span class="tooltiptext">
+              GitHub
+          </span></a>
+          <a class="link" target="_blank"   href="mailto:gsinghpathania01@gmail.com"><i class="fa-solid fa-envelope fa-2x"></i>
+           <span class="tooltiptext">
+              Email
+          </span></a>
+    </section>
+{% endblock %}
